@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- wow js -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="functional-blog">
+      <div class="m-auto relative w-[95%]">
+        <div
+          class="wow animate__animated animate__fadeInDown relative flex justify-center space-x-[10%] mx-auto my-7 border-1 border-black/10 font-medium rounded-xl w-[100%] shadow-lg bg-white"
+          data-wow-offset="100"
+          data-wow-duration="1s"
+        >
+          <button
+            id="btn1"
+            onclick="openTab(1)"
+            class="border-b-3 border-blue-500 px-9 py-5"
+          >
+            <span
+              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
+              >01</span
+            >
+            <span class="text-4 text-black/70">Clean User Interface</span>
+          </button>
+          <button
+            id="btn2"
+            onclick="openTab(2)"
+            class="border-b-3 border-transparent px-9 py-5"
+          >
+            <span
+              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
+              >02</span
+            ><span class="text-4 text-black/70">Essential Business Pages</span>
+          </button>
+          <button
+            id="btn3"
+            onclick="openTab(3)"
+            class="border-b-3 border-transparent px-9 py-5"
+          >
+            <span
+              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
+              >03</span
+            ><span
+              ><span class="text-4 text-black/70"
+                >Fully Functional Integrations</span
+              ></span
+            >
+          </button>
+        </div>
+        <img
+          class="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]"
+          src="./image/shape-dotted-light.svg"
+          alt=""
+        />
+        <div
+          id="tab-and-img"
+          class="wow animate__animated animate__fadeInDown flex mx-auto mt-20 justify-center"
+          data-wow-duration="2s"
+          data-wow-delay="0.5s"
+          data-wow-offset="5"
+        >
+          <div class="w-[52%] flex flex-col justify-center items-start">
+            <div id="tab1">
+              <h3 class="text-5xl font-bold text-black/85 mb-7">
+                Solid UI with Solid <br />
+                Features.
+              </h3>
+              <p class="text-x text-black/50 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies <br />
+                lacus non fermentum ultrices. Fusce consectetur le.
+              </p>
+              <br />
+              <p class="text-x mb-7 text-black/50">
+                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
+                <br />
+                finibus sagittis. Nulla ligula nunc egestas ut.
+              </p>
+            </div>
+            <div id="tab2" class="hidden">
+              <h3 class="text-5xl font-bold text-black/85 mb-7">
+                Pages and UI Components <br />
+                You Need for a SaaS.
+              </h3>
+              <p class="text-x text-black/50 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies <br />
+                lacus non fermentum ultrices. Fusce consectetur le.
+              </p>
+              <br />
+              <p class="text-x mb-7 text-black/50">
+                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
+                <br />
+                finibus sagittis. Nulla ligula nunc egestas ut.
+              </p>
+            </div>
+            <div id="tab3" class="hidden">
+              <h3 class="text-5xl font-bold text-black/85 mb-7">
+                Functional Blog, DB, Auth <br />
+                and Many More
+              </h3>
+              <p class="text-x text-black/50 mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                ultricies <br />
+                lacus non fermentum ultrices. Fusce consectetur le.
+              </p>
+              <br />
+              <p class="text-x mb-7 text-black/50">
+                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
+                <br />
+                finibus sagittis. Nulla ligula nunc egestas ut.
+              </p>
+            </div>
+          </div>
+          <img
+            class="w-[42%]"
+            src="./image/features-light-01.webp"
+            alt="features-light-01"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="global-company relative"
+      class="mx-auto mt-30 relative w-[95%] h-160 pt-30"
+    >
+      <div class="w-full h-full object-cover relative">
+        <img
+          class="bg-gradient-to-b from-blue-800/18 to-blue-800/5 w-full h-full object-cover rounded-lg"
+          src="./image/shape-dotted-light-02.svg"
+          alt=""
+        />
+        <img
+          class="absolute top-[-18%] left-0 w-[28%]"
+          src="./image/shape-04.webp"
+          alt=""
+        />
+        <img
+          class="absolute bottom-0 right-0 w-[10%]"
+          src="./image/shape-05.webp"
+          alt=""
+        />
+        <div
+          id="global-content"
+          class="absolute top-20 w-full h-[100%] text-center"
+        >
+          <div
+            class="wow animate__animated animate__fadeInDown"
+            data-wow-duration="1.5s"
+            data-wow-offset="5"
+          >
+            <h3 class="text-5xl font-bold text-black/85 mb-7 text-center">
+              Trusted by Global <br />
+              Companies.
+            </h3>
+            <p class="text-x text-black/50">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis <br />
+              tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+              maximus.
+            </p>
+          </div>
+
+          <div id="global-numer" class="flex justify-center mt-20 space-x-45">
+            <div
+              class="text-center wow animate__animated animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-offset="5"
+              data-wow-delay="1s"
+            >
+              <h3 class="text-5xl font-bold text-black/85 mb-4">500K</h3>
+              <p class="text-xl text-black/50">World Wide Clients</p>
+            </div>
+            <div
+              class="text-center wow animate__animated animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-offset="5"
+              data-wow-delay="1.3s"
+            >
+              <h3 class="text-5xl font-bold text-black/85 mb-4">1M+</h3>
+              <p class="text-xl text-black/50">Downloads</p>
+            </div>
+            <div
+              class="text-center wow animate__animated animate__fadeInDown"
+              data-wow-duration="1s"
+              data-wow-offset="5"
+              data-wow-delay="1.6s"
+            >
+              <h3 class="text-5xl font-bold text-black/85 mb-4">865</h3>
+              <p class="text-xl text-black/50">Winning Award</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute"></div>
+    </section>
+    <section id="integration" class="mx-auto mt-27 relative w-[95%] h-160">
+      <div class="relative pt-20">
+        <img
+          class="w-full h-full mt-27"
+          src="./image/shape-dotted-light.svg"
+          alt=""
+        />
+        <div
+          id="intergration-content"
+          class="absolute top-0 w-full text-center"
+        >
+          <div
+            id="intergration-title"
+            class="absolute top-0 w-full text-center wow animate__animated animate__fadeInDown"
+            data-wow-duration="1.5s"
+            data-wow-offset="5"
+          >
+            <button class="text-3 bg-blue-200/70 rounded-full px-3 py-1 mb-8">
+              INTEGRATIONS
+            </button>
+            <h3
+              class="text-5xl font-bold text-black/85 mb-7 text-center leading-snug"
+            >
+              Packed with all the key <br />
+              integrations you need
+            </h3>
+            <p class="text-lg text-black/50">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis <br />
+              tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+              maximus.
+            </p>
+            <div
+              id="intergration-img"
+              class="flex justify-around flex-wrap gap-y-10 mt-20"
+            >
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-07.svg"
+                    width="50"
+                    height="50"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="w-1/6"></div>
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-08.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+              </div>
+
+              <div class="w-1/6">
+                <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
+              </div>
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-09.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+              </div>
+              <div class="w-1/6"></div>
+              <div class="w-1/6">
+                <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
+              </div>
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-10.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+              </div>
+              <div class="w-1/6">
+                <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
+              </div>
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-11.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+              </div>
+              <div class="w-1/6">
+                <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
+              </div>
+              <div class="w-1/6">
+                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
+                  <img
+                    src="./image/brand-12.svg"
+                    alt=""
+                    width="50"
+                    height="50"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join-us" class="mx-auto mt-20 relative w-[95%]">
+      <div
+        class="flex bg-gradient-to-b from-[#dee8ff] to-[#f8f9fe] h-80 rounded-lg shadow-md"
+      >
+        <div
+          id="join-left"
+          class="w-1/2 pl-[70px] h-full flex flex-col justify-center items-center wow animate__animated animate__fadeInLeft"
+          data-wow-duration="1.5s"
+          data-wow-offset="5"
+        >
+          <h2
+            class="text-4xl font-bold text-black/85 mb-5 w-full leading-tight"
+          >
+            Join With Us Today & <br />
+            Increase Your Productivity
+          </h2>
+          <p class="text-md text-black/50 w-full">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis <br />
+            tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+            <br />
+            maximus.
+          </p>
+        </div>
+        <div
+          id="join-right"
+          class="flex w-1/2 h-full pr-[70px] items-center wow animate__animated animate__fadeInRight"
+          data-wow-duration="1.5s"
+          data-wow-offset="5"
+        >
+          <img src="./image/shape-06.webp" class="w-2/3 h-full" alt="" />
+          <a
+            class="inline-flex items-center gap-2.5 rounded-full bg-black/85 h-12 w-1/3 text-white text-center items-center px-[30px] text-[16px] font-semibold hover:opacity-90 hover:cursor-pointer"
+          >
+            Sign up free<i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="./index.js"></script>
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW({
+        resetAnimation: false,
+      }).init();
+    </script>
+  </body>
+</html>
