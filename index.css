@@ -456,3 +456,27 @@
   }
 }
 
+
+/* Nhi */
+.swiper-pagination {
+  position: relative;
+  z-index: 10;
+  margin-top: 32px; 
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d2d4d7;
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: 9999px;
+  margin: 0 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 10px;
+  background: #2563eb;
+  border-radius: 9999px;
+}
