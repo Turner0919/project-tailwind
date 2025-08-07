@@ -417,7 +417,38 @@
   transform: translateY(-50px);
   animation: slide 2s ease-out forwards;
 }
-
+/* HAO START*/
+.superman, .fiction, .features {
+    max-width:1200px;
+    margin: 0 auto;
+}
+.glow-sky {
+    color: black;
+    text-shadow:
+    0 0 5px #38bdf8,
+    0 0 10px #38bdf8,
+    0 0 20px #38bdf8;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.glow-green {
+    text-shadow:
+    0 0 4px #86efac,  
+    0 0 8px #86efac,
+    0 0 16px #4ade80;    
+  }
+.section_one {
+    max-width:1200px;
+    margin:0 auto;
+}
+.text-metatitle2 {
+    font-size: 20px;
+    line-height: 32px;
+}
+.font-semibold {
+    font-weight:600;
+}
+/* HAO END */
 @keyframes slide {
   to {
     opacity: 1;
