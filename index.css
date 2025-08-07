@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 #sang {
   margin-left: 0;
@@ -398,13 +398,6 @@
   transform: translateY(-50px);
   animation: slide 2s ease-out forwards;
 }
-
-.slide-to-down {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: slide 2s ease-out forwards;
-}
-
 .slide-to-right {
   opacity: 0;
   transform: translateX(-90px);
@@ -416,6 +409,12 @@
   transform: translateX(90px);
   animation: slide 2s ease-out forwards;
 }
+.slide-to-down {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slide 2s ease-out forwards;
+}
+
 @keyframes slide {
   to {
     opacity: 1;
