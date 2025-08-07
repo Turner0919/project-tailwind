@@ -1,382 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="./index.css" />
-    <!-- wow js -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <section id="functional-blog">
-      <div class="m-auto relative w-[95%]">
-        <div
-          class="slide-down wow relative flex justify-center space-x-[10%] mx-auto my-7 border-1 border-black/10 font-medium rounded-xl w-[100%] shadow-lg bg-white"
-          data-wow-offset="100"
-          data-wow-duration="1s"
-        >
-          <button
-            id="btn1"
-            onclick="openTab(1)"
-            class="border-b-3 border-blue-500 px-9 py-5"
-          >
-            <span
-              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
-              >01</span
-            >
-            <span class="text-4 text-black/70">Clean User Interface</span>
-          </button>
-          <button
-            id="btn2"
-            onclick="openTab(2)"
-            class="border-b-3 border-transparent px-9 py-5"
-          >
-            <span
-              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
-              >02</span
-            ><span class="text-4 text-black/70">Essential Business Pages</span>
-          </button>
-          <button
-            id="btn3"
-            onclick="openTab(3)"
-            class="border-b-3 border-transparent px-9 py-5"
-          >
-            <span
-              class="inline-block text-black/70 rounded-4xl border-1 border-black/20 text-xl mr-2 text-5 w-10 h-10 p-1"
-              >03</span
-            ><span
-              ><span class="text-4 text-black/70"
-                >Fully Functional Integrations</span
-              ></span
-            >
-          </button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <section class="contact-section">
+        <div class="container slide-to-down wow" data-wow-duration="1.5s"
+  data-wow-offset="5">
+            <div class="contact-form">
+                <h2>Send a message</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full name">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                        <input type="tel" placeholder="Phone number">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">By clicking Checkbox, you agree to use our "Form" terms And consent cookie usage in browser.</label>
+                        <button type="submit" class="send-message-btn">Send Message <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="find-us">
+                <h2>Find us</h2>
+                <div class="find-us-item">
+                    <h4>Our Location</h4>
+                    <p>290 Maryam Springs 260,</p>
+                    <p>Courbevoie, Paris, France</p>
+                </div>
+                <div class="find-us-item">
+                    <h4>Email Address</h4>
+                    <p>yourmail@domainname.com</p>
+                </div>
+                <div class="find-us-item">
+                    <h4>Phone Number</h4>
+                    <p>+009 42334 6343 843</p>
+                </div>
+            </div>
         </div>
-        <img
-          class="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]"
-          src="./image/shape-dotted-light.svg"
-          alt=""
-        />
-        <div
-          id="tab-and-img"
-          class="slide-down wow flex mx-auto mt-20 justify-center"
-          data-wow-duration="2s"
-          data-wow-delay="0.5s"
-        >
-          <div class="w-[52%] flex flex-col justify-center items-start">
-            <div id="tab1">
-              <h3 class="text-5xl font-bold text-black/85 mb-7">
-                Solid UI with Solid <br />
-                Features.
-              </h3>
-              <p class="text-x text-black/50 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies <br />
-                lacus non fermentum ultrices. Fusce consectetur le.
-              </p>
-              <br />
-              <p class="text-x mb-7 text-black/50">
-                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
-                <br />
-                finibus sagittis. Nulla ligula nunc egestas ut.
-              </p>
-            </div>
-            <div id="tab2" class="hidden">
-              <h3 class="text-5xl font-bold text-black/85 mb-7">
-                Pages and UI Components <br />
-                You Need for a SaaS.
-              </h3>
-              <p class="text-x text-black/50 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies <br />
-                lacus non fermentum ultrices. Fusce consectetur le.
-              </p>
-              <br />
-              <p class="text-x mb-7 text-black/50">
-                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
-                <br />
-                finibus sagittis. Nulla ligula nunc egestas ut.
-              </p>
-            </div>
-            <div id="tab3" class="hidden">
-              <h3 class="text-5xl font-bold text-black/85 mb-7">
-                Functional Blog, DB, Auth <br />
-                and Many More
-              </h3>
-              <p class="text-x text-black/50 mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies <br />
-                lacus non fermentum ultrices. Fusce consectetur le.
-              </p>
-              <br />
-              <p class="text-x mb-7 text-black/50">
-                Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
-                <br />
-                finibus sagittis. Nulla ligula nunc egestas ut.
-              </p>
-            </div>
-          </div>
-          <img
-            class="w-[42%]"
-            src="./image/features-light-01.webp"
-            alt="features-light-01"
-          />
-        </div>
-      </div>
     </section>
 
-    <section
-      id="global-company relative"
-      class="mx-auto mt-30 relative w-[95%] h-160 pt-30"
-    >
-      <div class="w-full h-full object-cover relative">
-        <img
-          class="bg-gradient-to-b from-blue-800/18 to-blue-800/5 w-full h-full object-cover rounded-lg"
-          src="./image/shape-dotted-light-02.svg"
-          alt=""
-        />
-        <img
-          class="absolute top-[-18%] left-0 w-[28%]"
-          src="./image/shape-04.webp"
-          alt=""
-        />
-        <img
-          class="absolute bottom-0 right-0 w-[10%]"
-          src="./image/shape-05.webp"
-          alt=""
-        />
-        <div
-          id="global-content"
-          class="absolute top-20 w-full h-[100%] text-center"
-        >
-          <div
-            class="slide-down wow"
-            data-wow-duration="1.5s"
-            data-wow-offset="5"
-          >
-            <h3 class="text-5xl font-bold text-black/85 mb-7 text-center">
-              Trusted by Global <br />
-              Companies.
-            </h3>
-            <p class="text-x text-black/50">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis <br />
-              tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
-              maximus.
-            </p>
-          </div>
-
-          <div id="global-numer" class="flex justify-center mt-20 space-x-45">
-            <div
-              class="slide-down text-center wow"
-              data-wow-duration="1s"
-              data-wow-offset="5"
-              data-wow-delay="1s"
-            >
-              <h3 class="text-5xl font-bold text-black/85 mb-4">500K</h3>
-              <p class="text-xl text-black/50">World Wide Clients</p>
-            </div>
-            <div
-              class="slide-down text-center wow"
-              data-wow-duration="1s"
-              data-wow-offset="5"
-              data-wow-delay="1.3s"
-            >
-              <h3 class="text-5xl font-bold text-black/85 mb-4">1M+</h3>
-              <p class="text-xl text-black/50">Downloads</p>
-            </div>
-            <div
-              class="slide-down text-center wow"
-              data-wow-duration="1s"
-              data-wow-offset="5"
-              data-wow-delay="1.6s"
-            >
-              <h3 class="text-5xl font-bold text-black/85 mb-4">865</h3>
-              <p class="text-xl text-black/50">Winning Award</p>
-            </div>
-          </div>
+    <section class="news-blogs-section">
+        <div class="container-blog">
+        <div class="animation slide-to-down wow">
+            <span class="section-label">News & Blogs</span>
+            <h2>Latest News & Blogs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</p>
         </div>
-      </div>
-
-      <div class="absolute"></div>
-    </section>
-    <section id="integration" class="mx-auto mt-27 relative w-[95%] h-160">
-      <div class="relative pt-20">
-        <img
-          class="w-full h-full mt-27"
-          src="./image/shape-dotted-light.svg"
-          alt=""
-        />
-        <div
-          id="intergration-content"
-          class="absolute top-0 w-full text-center"
-        >
-          <div
-            id="intergration-title"
-            class="slide-down absolute top-0 w-full text-center wow"
-            data-wow-duration="1.5s"
-            data-wow-offset="5"
-          >
-            <button class="text-3 bg-blue-200/70 rounded-full px-3 py-1 mb-8">
-              INTEGRATIONS
-            </button>
-            <h3
-              class="text-5xl font-bold text-black/85 mb-7 text-center leading-snug"
-            >
-              Packed with all the key <br />
-              integrations you need
-            </h3>
-            <p class="text-lg text-black/50">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis <br />
-              tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
-              maximus.
-            </p>
-            <div
-              id="intergration-img"
-              class="flex justify-around flex-wrap gap-y-10 mt-20"
-            >
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-07.svg"
-                    width="50"
-                    height="50"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="w-1/6"></div>
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-08.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-
-              <div class="w-1/6">
-                <div class="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
-              </div>
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-09.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-              <div class="w-1/6"></div>
-              <div class="w-1/6">
-                <div class="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
-              </div>
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-10.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-              <div class="w-1/6">
-                <div class="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
-              </div>
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-11.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-              <div class="w-1/6">
-                <div class="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
-              </div>
-              <div class="w-1/6">
-                <div class="rounded-xl bg-white shadow-lg w-fit p-4">
-                  <img
-                    src="./image/brand-12.svg"
-                    alt=""
-                    width="50"
-                    height="50"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+            
         </div>
-      </div>
+        <div class="blogs-grid slide-to-down">
+                <div class="blog-post">
+                    <div class="image"><img src="https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2F9e6b67ab379a182243ac521db056e96918ff1b5d-1000x667.png&w=1920&q=75"   alt="MERN Stack"></div>
+                    <div class="noidung">
+                        <h3>Exploring MERN Stack-Powering Modern We...</h3>
+                    <p>In the world of web development, staying ahead of the curve is crucial. One technology stack...</p>
+                    </div>
+                    
+                </div>
+                <div class="blog-post">
+                    <img class="image" src="https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2Fb34fca863dc4efa821da4e71328ec9718ab14062-970x440.png&w=1920&q=75" alt="UI Components">
+                    <div class="noidung">
+                        <h3>Best UI components for modern website...</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null...</p>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <img class="image" src="https://solid.nextjstemplates.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fnq6dnm34%2Fproduction%2Ff492eebba9742b0c8c71dd541bd123cdd4fe2130-970x440.png&w=1920&q=75" alt="UI/UX">
+                    <div class="noidung">
+                        <h3>The Power of UI/UX-Elevating Digital Ex...</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet...</p>
+                    </div>
+                </div>
+            </div>
     </section>
 
-    <section id="join-us" class="mx-auto mt-20 relative w-[95%]">
-      <div
-        class="flex bg-gradient-to-b from-[#dee8ff] to-[#f8f9fe] h-80 rounded-lg shadow-md"
-      >
-        <div
-          id="join-left"
-          class="slide-to-right w-1/2 pl-[70px] h-full flex flex-col justify-center items-center wow"
-          data-wow-duration="1.5s"
-          data-wow-offset="5"
-        >
-          <h2
-            class="text-4xl font-bold text-black/85 mb-5 w-full leading-tight"
-          >
-            Join With Us Today & <br />
-            Increase Your Productivity
-          </h2>
-          <p class="text-md text-black/50 w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis <br />
-            tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
-            <br />
-            maximus.
-          </p>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about slide-to-down">
+                    <img src="https://solid.nextjstemplates.com/images/logo/logo-light.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="contact-info">
+                        <span>Contact</span>
+                        <p>hello@solid.com</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Press media</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive future updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email address">
+                        <button><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom slide-to-down">
+                <div class="footer-bottom-left">
+                    <a href="#">English</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-bottom-center">
+                    <span>© 2025 Solid. All rights reserved</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div
-          id="join-right"
-          class="slide-to-left flex w-1/2 h-full pr-[70px] items-center wow"
-          data-wow-duration="1.5s"
-          data-wow-offset="5"
-        >
-          <img src="./image/shape-06.webp" class="w-2/3 h-full" alt="" />
-          <a
-            class="inline-flex items-center gap-2.5 rounded-full bg-black/85 h-12 w-1/3 text-white text-center items-center px-[30px] text-[16px] font-semibold hover:opacity-90 hover:cursor-pointer"
-          >
-            Sign up free<i class="fa fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+    </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW({
+    resetAnimation: false,
+  }).init();
+</script>
     <script src="./index.js"></script>
-    <!-- wow js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW({
-        resetAnimation: false,
-      }).init();
-    </script>
-  </body>
+</body>
 </html>
