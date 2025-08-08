@@ -16,10 +16,6 @@ let openTab = function (tabNum) {
     "border-b-3 border-blue-500 px-9 py-5";
 };
 
-// Bạn có thể thêm các tính năng tương tác ở đây nếu cần,
-// nhưng layout này chủ yếu là tĩnh và không yêu cầu JS.
-
-// Ví dụ: kiểm tra tính hợp lệ của form trước khi gửi
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".contact-form form");
   if (form) {
@@ -44,10 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Bạn có thể thêm các tính năng tương tác ở đây nếu cần,
-// nhưng layout này chủ yếu là tĩnh và không yêu cầu JS.
-
-// Ví dụ: kiểm tra tính hợp lệ của form trước khi gửi
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.contact-form form');
     if (form) {
